@@ -15,4 +15,5 @@ A little about *me*:
 
 - [University of Auckland](https://www.auckland.ac.nz/)
 
-A meme that captures how I currently feel about my university studies is ![](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWRza2NwaHVwNHF6am5nMDlnNGtieTIzNDUwNG4yaHMyNzgzOGk2ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/v3Rb7dGuvkmaRi6qei/giphy.gif)
+A meme that captures how I currently feel about my university studies is 
+![](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWRza2NwaHVwNHF6am5nMDlnNGtieTIzNDUwNG4yaHMyNzgzOGk2ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/v3Rb7dGuvkmaRi6qei/giphy.gif)
