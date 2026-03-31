@@ -3,7 +3,7 @@ title: My dynamic report
 output: html_fragment
 ---
 
-## Tracking Daily Drink Purchases
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
@@ -15,6 +15,9 @@ knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
 ```
 
 
+## Tracking Daily Drink Purchases
+
+This dynamic report shows patterns in my daily drink purchase data.
 
 ```{r}
 library(tidyverse)
@@ -46,3 +49,7 @@ ggplot(latest_data, aes(x = location)) +
     y = "Count"
   )
 ```
+
+The average drink cost is `r round(mean(latest_data$cost, na.rm = TRUE), 2)` NZD.
+
+The maximum drink cost is `r max(latest_data$cost, na.rm = TRUE)` NZD.
