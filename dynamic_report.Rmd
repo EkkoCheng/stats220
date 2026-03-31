@@ -1,0 +1,48 @@
+---
+title: My dynamic report
+output: html_fragment
+---
+
+## Tracking Daily Drink Purchases
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+
+```
+
+```{css}
+
+```
+
+
+
+```{r}
+library(tidyverse)
+
+logged_data <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRndDUsyO5Hx_XH9RwEKQufYwj3UZAdG3Q2rJLM3aw2i_IeOTPxztkrBd8LyqqVHhaRF79uS3xHY_N3/pub?gid=1084329449&single=true&output=csv")
+
+latest_data <- logged_data |>
+  rename(
+    timestamp = `时间戳记`,
+    drink_type = `1. What type of drink did you buy?`,
+    cost = `2. How much did the drink cost (NZD)?`,
+    purchase_time = `3. When did you buy the drink?`,
+    location = `4. Where did you buy the drink?`
+  )
+
+ggplot(latest_data, aes(x = drink_type)) +
+  geom_bar() +
+  labs(
+    title = "Number of drinks by type",
+    x = "Drink type",
+    y = "Count"
+  )
+
+ggplot(latest_data, aes(x = location)) +
+  geom_bar() +
+  labs(
+    title = "Number of drinks by purchase location",
+    x = "Location",
+    y = "Count"
+  )
+```
